@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(7, 16, 77);
+}
+nav .edi{
+    position: relative;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    right: 20px;
+
+
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 200;
+}
+
+nav div .logo {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(7, 16, 77);
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 80px;
+    font-size: 20px;
+    padding-top: 22px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(7, 16, 77);
+
+}
+
+nav ul li a:hover {
+
+    color: rgb(174, 85, 40);
+
+
+}
+
+nav ul li a:active {
+    color: crimson;
+}
+nav ul li{
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(7, 16, 77);
+
+}
+
+.ckey {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+    width: 170px;
+    height: 40px;
+    margin-right: 50px;
+    background-color: rgb(7, 16, 77);
+    border-style: none;
+    border-radius: 10px 0px 10px 10px;
+    box-shadow: 0px 0px 6px rgb(129, 129, 210);
+    margin-top: 15px;
+}
+
+.ckey:hover {
+    box-shadow: inset 0px 0px 8px rgb(129, 129, 210);
+}
+
+.small-screem {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+header section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+header section div{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+
+}
+header section .left img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+
+
+}
+
+header section .right {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+header nav .img img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+header nav .img{
+    width: 330px;
+    height:100%;
+
+}
+header section .right h1 {
+    font-size: 70px;
+    color: orange;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+
+
+}
+header section .right span{
+    font-size: 70px;
+    font-weight: 550;
+     
+    font-style: italic;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    
+}
+header section .right p{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-style: normal;
+    color: white;
+    margin-left: 55px;
+}
+.emma{
+  color: blue;
+  height: 60px;
+  width: 200px;
+  border: none;
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+/*small device*/
+@media screen and (max-width:1000px) {
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+    header section .right h1{
+        font-size: 20px;
+    }
+    header section .right  span {
+        font-size: 52px;
+    }
+header section .right{
+    width: 80%;
+
+}
+    .menu {
+        width: 70px;
+        height: 70px;
+        display: block;
+        position: relative;
+
+        top: -4px;
+        cursor: pointer;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .menu img.remove {
+        transform: translateX(120px);
+    }
+
+    .menu img {
+        transition: all 0.5s ease-in 0.5s;
+        transform: translateX(0px);
+    }
+
+    .menu h1.show {
+        display: block;
+        position: fixed;
+        top: 7px;
+        right: 40px;
+        color: rgb(7, 16, 77);
+        transition: right  1000ms 1s ease-in;
+    }
+
+    .menu h1.show:hover {}
+
+    .menu h1.remove {
+        opacity: 0;
+        right:-120px;
+        transition: right 1000ms 1s ease-in;
+        top: -7px;
+
+    }
+
+    .small-screem.remove {
+        right: -490px;
+        top: -590px;
+        display: flex;
+        transform: rotate(190deg);
+    }
+
+    .menu:hover {}
+
+    .menu img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .ckey2 {
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 16px;
+        width: 170px;
+        height: 40px;
+        position: relative;
+        margin-right: 50px;
+        background-color: rgb(7, 16, 77);
+        border-style: none;
+        border-radius: 10px 0px 10px 10px;
+        left: 30px;
+        box-shadow: 0px 0px 8px rgb(129, 129, 210);
+    }
+
+    .ckey2:hover {
+        box-shadow: inset 0px 0px 8px rgb(129, 129, 210);
+    }
+
+    .small-screem {
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        position: fixed;
+        top: 8.5vh;
+        transition: all 1s 1s ease-in-out;
+        right: 0px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        gap: 20px;
+        transform: rotate(0deg);
+        z-index: 40;
+    }
+    header section .left {
+        position: absolute;
+        z-index: -35;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+
+    }
+    header section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 35;
+    }
+
+    .small-screem ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .small-screem ul li {
+        color: rgb(7, 16, 77);
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 70px;
+        text-align: center;
+        position: relative;
+        width: 300px;
+        border-bottom: 2px solid rgb(7, 16, 77);
+        padding-top: 20px;
+        cursor: pointer;
+    }
+
+    .small-screem ul li:nth-child(1) {
+        border-top: 2px solid rgb(7, 16, 77);
+    }
+
+    .small-screem ul li:hover {
+        opacity: 0.5;
+        font-size: larger;
+
+    }
+}
+
+button {
+    cursor: pointer;
+
+}
